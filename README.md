@@ -24,7 +24,7 @@
     <li>
       <a href="#Getting-Started-in-the-my-application">Começando</a>
     </li>
-    <li><a href="#Contato">Contatos</a></li>
+    <li><a href="#Contatos">Contatos</a></li>
   </ol>
 </details>
 

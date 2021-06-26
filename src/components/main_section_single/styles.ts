@@ -6,8 +6,8 @@ type SliderVisible = {
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
-    width: 50vw;
-    height: 60vh;
+    width: 30vw;
+    height: 40vh;
 
     margin: 0 auto;
   `}

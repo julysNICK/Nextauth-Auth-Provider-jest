@@ -35,13 +35,21 @@ export const Navbar = () => {
           <Styled.Listindink>
             <Styled.link_name href="#">About</Styled.link_name>
           </Styled.Listindink>
-          <Styled.Listindink>
+          <Styled.Listindink aria-label="Login/Logout menu">
             {!session ? (
-              <Styled.link_name href="#" onClick={() => signIn('auth0')}>
+              <Styled.link_name
+                href="#"
+                aria-label="Login menu"
+                onClick={() => signIn('auth0')}
+              >
                 Login
               </Styled.link_name>
             ) : (
-              <Styled.link_name href="#" onClick={() => signOut()}>
+              <Styled.link_name
+                href="#"
+                aria-label="Logout menu"
+                onClick={() => signOut()}
+              >
                 Logout
               </Styled.link_name>
             )}

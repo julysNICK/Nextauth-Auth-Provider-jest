@@ -10,7 +10,7 @@ const props: Main_section_singleProps = {
 };
 jest.useFakeTimers();
 describe('<Main_section_single />', () => {
-  it('should render', () => {
+  it('should render slider', () => {
     renderTheme(<Main_section_single {...props} slides={SliderData} />);
     expect(screen.getByRole('img')).toBeInTheDocument();
   });

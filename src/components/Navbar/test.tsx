@@ -1,6 +1,8 @@
 import { fireEvent, screen } from '@testing-library/react';
 import { renderTheme } from '../../styles/render-theme';
 import { Navbar, NavbarProps } from '.';
+import { ThemeProvider } from 'styled-components';
+import { theme } from '../../styles/theme';
 
 const props: NavbarProps = {
   title: 'string',
@@ -38,10 +40,7 @@ describe('<Navbar />', () => {
     const button = screen.getByLabelText('Open/Close menu');
     const div = screen.getByLabelText('LogoArea');
     const menuContainer = button.nextSibling;
-    // expect(button).toHaveStyleRule('display', 'none');
-    // expect(menuContainer).toHaveStyleRule('opacity', '0', {
-    //   media: '(max-width:1055px)',
-    // });
+
     expect(screen.getByLabelText('Open menu')).toBeInTheDocument();
     fireEvent.click(button);
     expect(screen.getByLabelText('Close menu')).toBeInTheDocument();
@@ -54,6 +53,19 @@ describe('<Navbar />', () => {
 
     fireEvent.click(list);
     expect(screen.getByLabelText('Open menu')).toBeInTheDocument();
+  });
+  it('should render <button> search open/menu', () => {
+    const { rerender } = renderTheme(<Navbar {...props} />);
+    const list = screen.getByLabelText('Login menu');
+
+    expect(screen.getByLabelText('Login menu')).toBeInTheDocument();
+    fireEvent.click(list);
+    rerender(
+      <ThemeProvider theme={theme}>
+        <Navbar {...props} />
+      </ThemeProvider>,
+    );
+    expect(screen.getByLabelText('Logout menu')).toBeInTheDocument();
   });
   it('should render navbar snap', () => {
     const { container } = renderTheme(<Navbar {...props} />);

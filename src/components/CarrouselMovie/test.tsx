@@ -20,16 +20,16 @@ describe('<CarouselMovie />', () => {
 
     expect(screen.getAllByRole('img')[0]).toBeInTheDocument();
   });
-  it('should render', () => {
+  it('should render carousel no image ', () => {
     renderTheme(<CarouselMovie slides={SliderData} />);
     const div = screen.getAllByTestId('wrapper_image')[0];
     expect(div).toBeInTheDocument();
   });
-  it('should render', () => {
+  it('should render no array', () => {
     const { container } = renderTheme(<CarouselMovie slides={[]} />);
     expect(container.nextSibling).toBeNull();
   });
-  it('should render', () => {
+  it('should render move slider correct', () => {
     renderTheme(<CarouselMovie slides={SliderData} />);
     const button = screen.getByTestId('prev_slide');
     fireEvent.click(button);

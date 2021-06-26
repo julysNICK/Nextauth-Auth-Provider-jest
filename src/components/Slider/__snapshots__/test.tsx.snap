@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Slider /> should render component snapshot 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  opacity: 0;
+  -webkit-transition-duration: 1s ease;
+  transition-duration: 1s ease;
+  opacity: 1;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.c6 {
+  opacity: 0;
+  -webkit-transition-duration: 1s ease;
+  transition-duration: 1s ease;
+}
+
+.c5 {
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.c3 {
+  height: 12rem;
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2 {
+  width: 10rem;
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <svg
+      aria-hidden="true"
+      class="c1 c2"
+      data-testid="prev_slide"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M10.707 17.707L16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"
+      />
+    </svg>
+    <svg
+      aria-hidden="true"
+      class="c1 c3"
+      data-testid="next_slide"
+      fill="currentColor"
+      focusable="false"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M13.293 6.293L7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"
+      />
+    </svg>
+    <div
+      class="c4"
+    >
+      <img
+        alt="travel image"
+        class="c5"
+        src="https://www.publicitarioscriativos.com/wp-content/uploads/2018/01/16-mil-cartazes-de-filmes-e-series-em-hd-sem-textos-3.jpg"
+      />
+    </div>
+    <div
+      class="c6"
+    />
+    <div
+      class="c6"
+    />
+    <div
+      class="c6"
+    />
+    <div
+      class="c6"
+    />
+    <div
+      class="c6"
+    />
+  </div>
+</div>
+`;

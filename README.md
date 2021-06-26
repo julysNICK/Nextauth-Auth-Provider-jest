@@ -4,7 +4,7 @@
 
 <p align="center">O projeto NextAuthprovider  não teve um foco no css pois queria mais centrado em testes e no next auth para colocar o que eu aprendi sobre esses assunto.</p
  <h4 align="center">
-	✅  Landing Page 🚀 Concluido...  ✅
+	✅  Nextauth-Auth-Provider-jest 🚀 Concluido...  ✅
  </h4>
 
  <!-- TABLE OF CONTENTS -->
@@ -20,11 +20,11 @@
         <li><a href="#Features">Features</a></li>
       </ul>
     </li>
+     <li><a href="#Demonstração">Demonstração</a></li>
     <li>
       <a href="#Getting-Started-in-the-my-application">Começando</a>
     </li>
-    <li><a href="#Demonstração">Demonstração</a></li>
-    <li><a href="#Contato">Contato</a></li>
+    <li><a href="#Contato">Contatos</a></li>
   </ol>
 </details>
 
@@ -62,8 +62,6 @@ React js
 - [x] Uso para criação de componente com storybook
 
 ## 🔥Demonstração
-
-[![Deploy with Vercel](https://vercel.com/button)](https://next-blog-lac-eight.vercel.app)
 
 Next auth-Auth0
 
@@ -124,7 +122,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## Contato
+## Contatos
 
 Email: julysmartins54@gmail.com
 
